@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+$backGroundColor: #15171b;
+$primary: #ffce00;
+$secondary: #f6f6f6;
+$tertiary: #15171b;
+
+//width
+
+$x-small: 630px;
+$small: 1000px;
+$normal: 1400px;
+$large: 1800px;
+$x-large: 2000px;
+
+body {
+    margin: 0;
+    padding: 0;
+}

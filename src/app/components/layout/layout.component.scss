@@ -1,0 +1,95 @@
+// @import "../../../custom.scss";
+@import '../../../styles.scss';
+
+.wrapper {
+  flex-direction: column;
+  padding-top: 5px;
+
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-right: 10px;
+    list-style-type: none;
+    margin: 5px auto;
+    width: 90%;
+    @media all and (min-width: $x-small) {
+      flex-direction: row;
+    }
+    & > li {
+      padding: 5px 0;
+    }
+    & > li > a {
+      cursor: pointer;
+      color: $secondary;
+      font-size: 26px;
+      text-transform: uppercase;
+      text-decoration: none;
+      opacity: 0.4;
+      transition: opacity 0.5s;
+      background-image: linear-gradient($primary, $primary);
+      background-size: 0 5px, auto;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      border-radius: 17%;
+      transition: all 0.5s ease-out;
+      @media all and (min-width: $x-small) {
+        margin: 0 10px;
+        font-size: 28px;
+      }
+      @media all and (min-width: $small) {
+        font-size: 30px;
+      }
+      @media all and (min-width: $normal) {
+        font-size: 32px;
+      }
+      @media all and (min-width: $large) {
+        font-size: 34px;
+      }
+      @media all and (min-width: $x-large) {
+        font-size: 36px;
+      }
+      &:hover {
+        opacity: 1;
+        background-size: 100% 5px, auto;
+      }
+      &:active {
+        color: $primary;
+      }
+    }
+
+    .icon {
+      display: flex;
+      color: $secondary;
+      padding-right: 10px;
+      list-style-type: none;
+      cursor: pointer;
+      font-size: 26px;
+      text-decoration: none;
+      opacity: 0.4;
+      transition: opacity 0.5s;
+      font-size: 26px;
+      @media all and (min-width: $x-small) {
+        font-size: 28px;
+      }
+      @media all and (min-width: $small) {
+        font-size: 30px;
+      }
+      @media all and (min-width: $normal) {
+        font-size: 32px;
+      }
+      @media all and (min-width: $large) {
+        font-size: 34px;
+      }
+      @media all and (min-width: $x-large) {
+        font-size: 36px;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      &:active {
+        color: $primary;
+      }
+    }
+  }
+}

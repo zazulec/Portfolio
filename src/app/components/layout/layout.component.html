@@ -1,0 +1,22 @@
+<div class="wrapper">
+      <ul class="navLinks">
+        <li (click)="changeView('home')">
+            <!-- <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon> -->
+        </li>
+        <li (click)="changeView('tech')">
+            Technologie
+        </li>
+        <li (click)="changeView('projects')">
+            Projekty
+        </li>
+        <li (click)="changeView('contacts')">
+            Kontakt 
+        </li>
+      </ul>
+      <app-home-page *ngIf="activeView==='home'"></app-home-page>
+      <app-tech *ngIf="activeView==='tech'"></app-tech>
+      <app-projects *ngIf="activeView==='projects'"></app-projects>
+      <app-contacts *ngIf="activeView==='contacts'"></app-contacts>
+</div>
+
+
