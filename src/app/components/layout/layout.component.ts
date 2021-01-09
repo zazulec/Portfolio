@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from 'src/app/services/LayoutServce';
+import { LayoutViewTypes } from './LayoutViewTypes';
 
 @Component({
   selector: 'app-layout',
@@ -6,16 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
-  public activeView: string = "home";
+  layoutViewTypes = LayoutViewTypes;
+  
 
-  constructor() {}
-
+  constructor(private layoutService: LayoutService) {
+  
+  }
+  
   ngOnInit(): void {
-
   }
 
-  changeView = (view: string): void => {
-    this.activeView = view
+  changeView(view: LayoutViewTypes): void {
+    this.layoutService.setView(view)
   }
+  getActiveView = () => this.layoutService.getView()
 
 }

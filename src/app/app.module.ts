@@ -9,6 +9,7 @@ import { TechComponent } from './pages/tech/tech.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { HomePageComponent } from './pages/homePage/home-page.component';
+import { LayoutService } from './services/LayoutServce';
 
 @NgModule({
   declarations: [
@@ -21,9 +22,10 @@ import { HomePageComponent } from './pages/homePage/home-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
   ],
-  providers: [MatIconModule],
+  providers: [LayoutService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
