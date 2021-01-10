@@ -1,4 +1,4 @@
-$backGroundColor: #15171b;
+$backgroundColor: #15171b;
 $primary: #ffce00;
 $secondary: #f6f6f6;
 $tertiary: #15171b;
@@ -14,4 +14,5 @@ $x-large: 2000px;
 body {
     margin: 0;
     padding: 0;
+    background-color: $backgroundColor;
 }

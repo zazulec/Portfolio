@@ -1,4 +1,3 @@
-// @import "../../../custom.scss";
 @import '../../../styles.scss';
 
 .wrapper {
@@ -14,12 +13,11 @@
     margin: 5px auto;
     width: 90%;
     @media all and (min-width: $x-small) {
+      align-items: center;
       flex-direction: row;
     }
     & > li {
       padding: 5px 0;
-    }
-    & > li > a {
       cursor: pointer;
       color: $secondary;
       font-size: 26px;
@@ -33,7 +31,7 @@
       background-position: center bottom;
       border-radius: 17%;
       transition: all 0.5s ease-out;
-      @media all and (min-width: $x-small) {
+      @media all and (min-width: 650px) {
         margin: 0 10px;
         font-size: 28px;
       }
