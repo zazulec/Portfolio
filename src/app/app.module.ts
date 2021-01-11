@@ -10,6 +10,7 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { HomePageComponent } from './pages/homePage/home-page.component';
 import { LayoutService } from './services/LayoutServce';
+import { ProjectCardComponent } from './components/projectCard/project-card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { LayoutService } from './services/LayoutServce';
     ContactsComponent,
     ProjectsComponent,
     HomePageComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+@import "../../../styles.scss";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    h1{
+        color: $primary;
+        font-size: 40px;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
+}

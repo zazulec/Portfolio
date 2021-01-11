@@ -11,5 +11,5 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  changeVisible = () => alert("hover")
 }
