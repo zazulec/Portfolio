@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
     selector: 'app-project-card',
@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ProjectCardComponent implements OnInit {
-    isVisible = false;
-
+    @Input() projects!: Array<Object>; 
+    @Input() project: any;
     constructor() { }
 
     ngOnInit() { }

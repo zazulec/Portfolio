@@ -1,12 +1,9 @@
 <section class="wrapper">
     <h1>Moje Projekty:</h1>
-    <div class="projects">
-        <app-project-card (click)="changeVisible()"></app-project-card>
-        <app-project-card (click)="changeVisible()"></app-project-card>
-        <app-project-card (click)="changeVisible()"></app-project-card>
-        <app-project-card (click)="changeVisible()"></app-project-card>
-        <app-project-card (click)="changeVisible()"></app-project-card>
-        <app-project-card (click)="changeVisible()"></app-project-card>
-        <app-project-card (click)="changeVisible()"></app-project-card>
+    <div class="container">
+    <div class="projects" *ngFor="let project of projects">
+            <app-project-card [project]="project">
+            </app-project-card>
     </div>
+</div>
 </section>
