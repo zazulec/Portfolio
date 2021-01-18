@@ -1,11 +1,5 @@
 @import "../../../styles.scss";
 
-.home {
-  width: 100%;
-  min-height: 100vh;
-  background-color: $backgroundColor;
-}
-
 .wrapper {
   width: 100vw;
   padding-top: 20px;
@@ -23,16 +17,17 @@
         line-height: 2;
       }
     }
-    .personalInfo {
+    &_personalInfo {
       display: flex;
       flex-direction: column;
     }
-    .socials {
+    &_socials {
       display: flex;
       justify-content: flex-start;
       width: max-content;
       font-size: 30px;
-      .linkedin {
+      &--linkedin,
+      &--gitlab {
         opacity: 0.4;
         cursor: pointer;
         transition: all 0.5s;
@@ -41,19 +36,19 @@
           opacity: 1;
         }
       }
-      .gitlab {
-        @extend .linkedin;
-      }
+    }
+    &_image {
+      width: 385px;
+      height: 515px;
+      margin: 10px 10px 0 10px;
+      -webkit-animation: appear 1s;
+      animation: appear 1s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
     }
   }
-  .image {
-    -webkit-animation: appear 1s;
-    animation: appear 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
   
-  .content {
+  .infoContent {
     display: flex;
     flex-direction: column;
     align-items: center;

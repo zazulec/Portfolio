@@ -1,0 +1,18 @@
+@import "../../../styles.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  margin: 0 30px;
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  p {
+    font-size: 28px;
+  }
+}

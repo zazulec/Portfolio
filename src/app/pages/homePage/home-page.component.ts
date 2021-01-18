@@ -1,13 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-home-page',
-    templateUrl: 'home-page.component.html',
-    styleUrls: ['./home-page.component.scss']
+  selector: 'app-home-page',
+  templateUrl: 'home-page.component.html',
+  styleUrls: ['./home-page.component.scss'],
 })
-
 export class HomePageComponent implements OnInit {
-    constructor() { }
+  mobile!: boolean;
+  constructor() {}
 
-    ngOnInit() { }
+  checkWindowWidth = () => {
+    this.mobile = true;
+  };
+
+  ngOnInit() {
+    this.checkWindowWidth = () => {
+      if (window.screen.width < 800) {
+        return (this.mobile = false);
+      } else {
+        return (this.mobile = true);
+      }
+    };
+    this.checkWindowWidth();
+    window.onresize = this.checkWindowWidth;
+  }
 }

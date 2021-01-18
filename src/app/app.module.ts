@@ -11,6 +11,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { HomePageComponent } from './pages/homePage/home-page.component';
 import { LayoutService } from './services/LayoutServce';
 import { ProjectCardComponent } from './components/projectCard/project-card.component';
+import { TechLogo } from './components/techLogo/tech-logo.component.';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProjectCardComponent } from './components/projectCard/project-card.comp
     ProjectsComponent,
     HomePageComponent,
     ProjectCardComponent,
+    TechLogo
   ],
   imports: [
     BrowserModule,
