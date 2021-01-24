@@ -1,24 +1,18 @@
 <div class="wrapper">
-      <ul class="navLinks">
-        <li (click)="changeView(layoutViewTypes.HOME)">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-        </li>
-        <li (click)="changeView(layoutViewTypes.TECH)">
-            Technologie
-        </li>
-        <li (click)="changeView(layoutViewTypes.PROJECTS)">
-            Projekty
-        </li>
-        <li (click)="changeView(layoutViewTypes.CONTACTS)">
-            Kontakt 
-        </li>
-      </ul>
-      <ng-container [ngSwitch]="getActiveView()">
-        <app-home-page *ngSwitchCase="layoutViewTypes.HOME"></app-home-page>
-        <app-tech *ngSwitchCase="layoutViewTypes.TECH"></app-tech>
-        <app-projects *ngSwitchCase="layoutViewTypes.PROJECTS"></app-projects>
-        <app-contacts *ngSwitchCase="layoutViewTypes.CONTACTS"></app-contacts>
-      </ng-container>
+  <ul class="navLinks">
+    <li (click)="changeView(layoutViewTypes.HOME)">
+      <mat-icon aria-hidden="false" aria-label="Example home icon"
+        >home</mat-icon
+      >
+    </li>
+    <li (click)="changeView(layoutViewTypes.TECH)">Technologies</li>
+    <li (click)="changeView(layoutViewTypes.PROJECTS)">Projects</li>
+    <li (click)="changeView(layoutViewTypes.CONTACTS)">Contact</li>
+  </ul>
+  <ng-container [ngSwitch]="getActiveView()">
+    <app-home-page *ngSwitchCase="layoutViewTypes.HOME"></app-home-page>
+    <app-tech *ngSwitchCase="layoutViewTypes.TECH"></app-tech>
+    <app-projects *ngSwitchCase="layoutViewTypes.PROJECTS"></app-projects>
+    <app-contacts *ngSwitchCase="layoutViewTypes.CONTACTS"></app-contacts>
+  </ng-container>
 </div>
-
-

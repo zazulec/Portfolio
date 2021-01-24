@@ -12,6 +12,8 @@ import { HomePageComponent } from './pages/homePage/home-page.component';
 import { LayoutService } from './services/LayoutServce';
 import { ProjectCardComponent } from './components/projectCard/project-card.component';
 import { TechLogo } from './components/techLogo/tech-logo.component.';
+import { FormsModule } from '@angular/forms';
+import { ClipboardModule } from '@angular/cdk/clipboard'
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { TechLogo } from './components/techLogo/tech-logo.component.';
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
+    FormsModule,
+    ClipboardModule,
   ],
   providers: [LayoutService],
   bootstrap: [AppComponent]

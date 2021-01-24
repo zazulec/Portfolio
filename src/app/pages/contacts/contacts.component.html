@@ -1,1 +1,23 @@
-<div>Kontakt</div>
+<section class="contacts">
+  <h1>Feel free to contact me:</h1>
+  <div class="contacts_email">
+    <p>pawelzarzyckimail@gmail.com</p>
+    <button
+      [cdkCopyToClipboard]="textValue"
+      (click)="toggleVisibleCoppyText('mail')"
+    >
+      <img src="../../../assets/icons/copy.png" alt="copyIcon" />
+    </button>
+    <span *ngIf="isVisibleCoppyMailText">Skopiowano!</span>
+  </div>
+  <div class="contacts_phone">
+    <p>(+48) 785-909-387</p>
+    <button
+      [cdkCopyToClipboard]="phoneValue"
+      (click)="toggleVisibleCoppyText('phone')"
+    >
+      <img src="../../../assets/icons/copy.png" alt="copyIcon" />
+    </button>
+    <span *ngIf="isVisibleCoppyPhoneText">Skopiowano!</span>
+  </div>
+</section>
