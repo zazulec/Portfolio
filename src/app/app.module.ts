@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatIconModule} from '@angular/material/icon';
-
+import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/layout/layout.component';
@@ -13,7 +12,8 @@ import { LayoutService } from './services/LayoutServce';
 import { ProjectCardComponent } from './components/projectCard/project-card.component';
 import { TechLogo } from './components/techLogo/tech-logo.component.';
 import { FormsModule } from '@angular/forms';
-import { ClipboardModule } from '@angular/cdk/clipboard'
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { ClipboardModule } from '@angular/cdk/clipboard'
     ProjectsComponent,
     HomePageComponent,
     ProjectCardComponent,
-    TechLogo
+    TechLogo,
   ],
   imports: [
     BrowserModule,
@@ -32,8 +32,9 @@ import { ClipboardModule } from '@angular/cdk/clipboard'
     MatIconModule,
     FormsModule,
     ClipboardModule,
+    BrowserAnimationsModule,
   ],
   providers: [LayoutService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

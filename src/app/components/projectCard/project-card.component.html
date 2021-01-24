@@ -1,12 +1,24 @@
 <div class="projectCard">
   <p>{{ project.title }}</p>
-  <img src="{{ project.source }}" alt="projectImage" />
-  <div class="additionalContent">
-    <a href="{{ project.githubLink }}" target="_blank">
-        <img src="../../../assets/icons/githubIcon.svg" alt="icon/linkToCode"/>
+  <img
+    class="projectCard_photo"
+    src="{{ project.source }}"
+    alt="projectImage"
+  />
+  <div class="projectCard_additionalContent">
+    <a
+    class="projectCard_additionalContent--imageLeft" 
+      href="{{ project.githubLink }}"
+      target="_blank"
+    >
+      <img src="../../../assets/icons/githubIcon.svg" alt="icon/linkToCode" />
     </a>
-    <a href="{{ project.liLink }}" target="_blank">
-        <img src="../../../assets/icons/linkedinIcon.svg" alt="icon/linkToLive"/>
+    <a
+      [hidden]="!project.liLink"
+      href="{{ project.liLink }}"
+      target="_blank"
+    >
+      <img  class="projectCard_additionalContent--imageRight" src="../../../assets/icons/siteOnline.png" alt="icon/linkToLive" />
     </a>
   </div>
 </div>

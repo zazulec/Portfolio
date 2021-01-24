@@ -1,13 +1,19 @@
 <div class="wrapper">
   <ul class="navLinks">
     <li (click)="changeView(layoutViewTypes.HOME)">
-      <mat-icon aria-hidden="false" aria-label="Example home icon"
-        >home</mat-icon
-      >
+      <span
+        ><mat-icon aria-hidden="false" aria-label="Example home icon"
+          >home</mat-icon
+        >
+      </span>
     </li>
-    <li (click)="changeView(layoutViewTypes.TECH)">Technologies</li>
-    <li (click)="changeView(layoutViewTypes.PROJECTS)">Projects</li>
-    <li (click)="changeView(layoutViewTypes.CONTACTS)">Contact</li>
+    <li (click)="changeView(layoutViewTypes.TECH)">
+      <span>Technologies</span>
+    </li>
+    <li (click)="changeView(layoutViewTypes.PROJECTS)">
+      <span>Projects</span>
+    </li>
+    <li (click)="changeView(layoutViewTypes.CONTACTS)"><span>Contact</span></li>
   </ul>
   <ng-container [ngSwitch]="getActiveView()">
     <app-home-page *ngSwitchCase="layoutViewTypes.HOME"></app-home-page>

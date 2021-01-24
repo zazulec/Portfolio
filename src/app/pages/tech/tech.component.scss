@@ -1,4 +1,5 @@
 @import "../../../styles.scss";
+@import "../../../mixins.scss";
 
 .wrapper {
   display: flex;
@@ -6,6 +7,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  @include fadeIn;
   h1 {
     color: $primary;
     font-size: 40px;
@@ -17,5 +19,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
+    &--icon {
+      @include flipInY;
+    }
   }
 }

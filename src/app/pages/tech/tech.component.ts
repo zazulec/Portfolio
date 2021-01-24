@@ -1,9 +1,20 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-tech',
   templateUrl: './tech.component.html',
   styleUrls: ['./tech.component.scss'],
+  animations: [
+    // animation triggers go here
+  ],
 })
 export class TechComponent implements OnInit {
   @Input() techLogoData: Array<Object> = [
@@ -26,5 +37,6 @@ export class TechComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }

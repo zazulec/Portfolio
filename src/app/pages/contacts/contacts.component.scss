@@ -1,10 +1,12 @@
 @import "../../../styles.scss";
+@import "../../../mixins.scss";
 
 .contacts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include fadeIn;
   h1 {
     color: $primary;
     font-size: 40px;
@@ -15,6 +17,8 @@
     font-size: 26px;
     position: relative;
     align-items: center;
+    @include slideInLeft;
+
     p {
       margin-right: 10px;
       height: 50px;

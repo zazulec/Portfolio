@@ -1,8 +1,10 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
+@import '../../../mixins.scss';
 
 .wrapper {
   flex-direction: column;
   padding-top: 5px;
+  @include fadeIn;
 
   .navLinks {
     display: flex;
@@ -17,6 +19,8 @@
       flex-direction: row;
     }
     & > li {
+      margin-bottom: 7px;
+    & span {
       padding: 5px 0;
       cursor: pointer;
       color: $secondary;
@@ -55,6 +59,7 @@
         color: $primary;
       }
     }
+  }
 
     .icon {
       display: flex;
