@@ -11,8 +11,15 @@
     width: 100px;
     height: 100px;
     border-radius: 10px;
+    @media screen and (min-width: $large) {
+      width: 130px;
+      height: 130px;
+    }
   }
   p {
     font-size: 28px;
+    @media screen and (min-width: $large) {
+      font-size: 45px;
+    }
   }
 }

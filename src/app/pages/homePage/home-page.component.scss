@@ -17,6 +17,9 @@
         line-height: 80%;
         font-size: 55px;
         line-height: 2;
+        @media screen and (min-width: $large) {
+          font-size: 72px;
+        }
       }
     }
     &_personalInfo {
@@ -38,6 +41,9 @@
         cursor: pointer;
         transition: all 0.5s;
         margin: 10px 10px 10px 0px;
+        @media screen and (min-width: $large) {
+          width: 130px;
+        }
         &:hover {
           opacity: 1;
         }
@@ -52,6 +58,10 @@
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       @include slideInRight;
+      @media screen and (min-width: $large) {
+        width: 487px;
+        height: 577px;
+      }
     }
   }
 
@@ -68,16 +78,22 @@
     @include fadeIn;
     & h1 {
       color: $tertiary;
-      font-size: 35px;
+      font-size: 40px;
       font-weight: 700;
       padding-bottom: 20px;
       text-align: center;
       padding: 0 15px;
+      @media screen and (min-width: $large) {
+        font-size: 60px;
+      }
     }
     & p {
       text-indent: 20px;
       margin: 0 auto;
       width: 80%;
+      @media screen and (min-width: $large) {
+        font-size: 35px;
+      }
     }
   }
 }
